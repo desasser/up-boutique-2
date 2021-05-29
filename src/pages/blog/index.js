@@ -1,15 +1,15 @@
-import Head from "next/head";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import { getPostList } from "../utils/posts";
+import Head from 'next/head';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import { getPostList } from '../../utils/posts';
 
-const Home = ({ postList }) => {
+const Blog = ({ postList }) => {
   return (
     <>
       <Head>
-        <title>UP Boutique</title>
+        <title>Blog // UP Boutique</title>
       </Head>
-      <div className="page-wrapper">
+      <div className='page-wrapper'>
         <Header />
         <main>
           <pre>{JSON.stringify(postList, null, 2)}</pre>
@@ -29,4 +29,4 @@ export const getStaticProps = () => {
   };
 };
 
-export default Home;
+export default Blog;
