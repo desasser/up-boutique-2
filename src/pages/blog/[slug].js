@@ -1,7 +1,8 @@
-import Head from 'next/head';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import { getPostSlugs, getPostData } from '../../utils/posts';
+import Head from "next/head";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import SinglePost from "../../components/SinglePost";
+import { getPostSlugs, getPostData } from "../../utils/posts";
 
 const BlogPost = ({ postData }) => {
   return (
@@ -9,10 +10,10 @@ const BlogPost = ({ postData }) => {
       <Head>
         <title>{postData.postTitle} // UP Boutique</title>
       </Head>
-      <div className='page-wrapper'>
-        <Header />
+      <div className="page-wrapper">
+        <Header bgImage={postData.featuredImage} />
         <main>
-          <pre>{JSON.stringify(postData, null, 2)}</pre>
+          <SinglePost post={postData} />
         </main>
         <Footer />
       </div>
