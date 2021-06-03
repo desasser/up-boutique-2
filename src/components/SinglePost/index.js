@@ -1,5 +1,4 @@
 import styles from "./singlePost.module.css";
-import Image from "next/image";
 
 const SinglePost = ({ post }) => {
   const { featuredImage, postTitle, author, postContent } = post;
