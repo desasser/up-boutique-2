@@ -11,6 +11,10 @@ const navItems = [
     path: "/blog",
     label: "Blog",
   },
+  {
+    path: "/products",
+    label: "Products",
+  },
 ];
 
 const Header = ({ bgImage }) => {
