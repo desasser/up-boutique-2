@@ -8,7 +8,7 @@ const SinglePost = ({ post }) => {
     <section className={styles["post"]}>
       <div className={styles["post-wrapper"]}>
         <div className={styles["post-image-wrapper"]}>
-          <Image
+          <img
             className={styles["post-image"]}
             src={featuredImage}
             alt={`Featured image for ${postTitle}`}

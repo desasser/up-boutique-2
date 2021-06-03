@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './singleProduct.module.css';
+import ProductForm from '../ProductForm';
 
 const SingleProduct = ({ product }) => {
   const { productImage, productName, price, description } = product;
@@ -8,7 +9,7 @@ const SingleProduct = ({ product }) => {
     <section className={styles['product']}>
       <div className={styles['product-wrapper']}>
         <div className={styles['product-image-wrapper']}>
-          <Image
+          <img
             className={styles['product-image']}
             src={productImage.url}
             alt={`Featured image for ${productName}`}
@@ -22,8 +23,9 @@ const SingleProduct = ({ product }) => {
           <h3 className={styles['product-price']}>${price}</h3>
           <p
             className={styles['product-description']}
-            dangerouslySetInnerHTML={{ __html: description.html }}
+            dangerouslySetInnerHTML={{ __html: description }}
           />
+          <ProductForm product={product} />
         </div>
       </div>
     </section>
