@@ -8,7 +8,7 @@ const SingleProduct = ({ product }) => {
     <section className={styles['product']}>
       <div className={styles['product-wrapper']}>
         <div className={styles['product-image-wrapper']}>
-          <Image
+          <img
             className={styles['product-image']}
             src={productImage.url}
             alt={`Featured image for ${productName}`}

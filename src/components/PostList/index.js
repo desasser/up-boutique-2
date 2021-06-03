@@ -12,7 +12,7 @@ const PostList = ({ posts = [] }) => {
             <div key={slug} className={styles["post-item"]}>
               <Link href={`/blog/${slug}`}>
                 <div className={styles["post-image-wrapper"]}>
-                  <Image
+                  <img
                     className={styles["post-image"]}
                     src={featuredImage}
                     alt={`Featured image for ${postTitle}`}
