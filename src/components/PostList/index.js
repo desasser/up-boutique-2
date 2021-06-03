@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./postList.module.css";
-import Image from "next/image";
 
 const PostList = ({ posts = [] }) => {
   return (

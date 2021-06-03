@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './singleProduct.module.css';
 import ProductForm from '../ProductForm';
 
